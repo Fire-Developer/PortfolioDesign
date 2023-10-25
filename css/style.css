@@ -827,8 +827,7 @@ h3.my-profession
 {
     .aside
     {
-        left: -290px;
-        height: 100vh;
+        left: -290px; 
         transition: all 0.5s;
         background: black;
     }
