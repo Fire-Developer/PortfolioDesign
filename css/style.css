@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap');
 :root
 {
@@ -22,11 +29,13 @@ body
     padding: 0;
     outline: none;
     text-decoration: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 ::before, ::after
 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 ul
 {
@@ -77,7 +86,9 @@ ul
 }
 .section-title
 {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
 }
@@ -111,8 +122,11 @@ ul
 }
 .row
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
@@ -128,15 +142,20 @@ ul
     white-space: nowrap;
     border: none;
     background: var(--skin-color);
+    -webkit-transition: all0.3s ease;
+    -o-transition: all0.3s ease;
     transition: all0.3s ease;
 }
 .btn:hover
 {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 .shadow-dark
 {
-    box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
+    -webkit-box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
+            box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
 }
 /*aside*/
 #check
@@ -214,9 +233,15 @@ ul
     top: 0;
     padding: 50px;
     border-right: 2px solid var(--bg-black-900);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 10;
      
 }
@@ -280,8 +305,12 @@ ul
     border-radius: 5px;
     background:rgb(218, 216, 216);
     display: none;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
 }
 .aside .nav-toggler span
@@ -325,7 +354,9 @@ ul
 }
 .aside .nav li a:hover
 {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
     
 }
 .aside .nav li a.active
@@ -340,12 +371,16 @@ ul
 .home
 {
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: var(--text-black-900);
 }
 .home .home-info
 {
-    flex: 0 0 60%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
     max-width: 60%;
 }
 h3.hello
@@ -379,7 +414,9 @@ h3.my-profession
 }
 .home .home-img
 {
-    flex: 0 0 40%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
     position: relative;
@@ -414,17 +451,23 @@ h3.my-profession
 }
 .home .home-img img:hover
 {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }/*About*/
 
 .about .about-content
 {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
 }
 .about .about-content .about-text
 {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
     
 }
@@ -447,13 +490,17 @@ h3.my-profession
 }
 .about .about-content .personal-info
 {
-    flex: 0 0 60%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
     max-width: 60%;
     margin-top: 40px;
 }
 .about .about-content .personal-info .info-item
 {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     max-width: 50%;
 
 }
@@ -483,14 +530,18 @@ h3.my-profession
 }
 .about .about-content .skills
 {
-    flex: 0 0 40%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
 
 }
 .about .about-content .skills .skill-item 
 {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
 
     
@@ -537,7 +588,9 @@ h3.my-profession
 .about .about-content .education,
 .about .about-content .experience
 {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
 }
@@ -550,11 +603,15 @@ h3.my-profession
 }
 .about .about-content .timeline-box1
 {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
 }
 .about .about-content .timeline-box2{
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
 }
 .about .about-content .timeline
@@ -630,7 +687,9 @@ h3.my-profession
 .services .services-item
 {
     margin-bottom: 30px;
-    flex: 0 0 33.33%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
     max-width: 33.33%;
 }
 .services .services-item .services-item-inner
@@ -642,12 +701,17 @@ h3.my-profession
     width: 100%;
     position: relative;
     text-align: center;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .services .services-item .services-item-inner:hover
 {
-    box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
-    transform: scale(1.05);
+    -webkit-box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
+            box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 .services .services-item .services-item-inner .icon
 {
@@ -658,14 +722,18 @@ h3.my-profession
     background-color: var(--skin-color);
     margin: 0 auto 30px;
     text-align: center;
-    transform: all 0.3s ease;
+    -webkit-transform: all 0.3s ease;
+        -ms-transform: all 0.3s ease;
+            transform: all 0.3s ease;
 }
 .services .services-item .services-item-inner .icon .fa
 {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
-    transform: all 0.3s ease;
+    -webkit-transform: all 0.3s ease;
+        -ms-transform: all 0.3s ease;
+            transform: all 0.3s ease;
 }
 .services .services-item .services-item-inner:hover .icon
 {
@@ -697,7 +765,9 @@ h3.my-profession
 }
 .portfolio .portfolio-heading
 {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
@@ -709,7 +779,9 @@ h3.my-profession
 }
 .portfolio .portfolio-item
 {
-    flex: 0 0 33.33%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
 }
@@ -722,7 +794,9 @@ h3.my-profession
 }
 .portfolio .portfolio-item-inner:hover
 {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 .portfolio .portfolio-item-inner .portfolio-img img 
 {
@@ -746,7 +820,9 @@ h3.my-profession
 }
 .contact .contact-info-item
 {
-    flex: 0 0 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -775,23 +851,32 @@ h3.my-profession
 }
 .contact .contact-info-item:hover
 {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
     border: 6px solid var(--bg-black-50);
-    box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
+    -webkit-box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
+            box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
 
 }.contact .contact-form
 {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
 }
 .contact .contact-form .col-6
 {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     max-width: 50%;
 }
 .contact .contact-form .col-12
 {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
 }
 .contact .contact-form .form-item
@@ -807,12 +892,15 @@ h3.my-profession
     border: 1px solid rgb(46, 46, 49) ;
     padding: 10px 25px;
     color: var(--text-black-700);
+    -webkit-transition: all0.3s ease;
+    -o-transition: all0.3s ease;
     transition: all0.3s ease;
 
 }
 .contact .contact-form .form-item .form-control:focus
 {
-    box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
+    -webkit-box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
+            box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
 }
 .contact .contact-form .form-item textarea.form-control
 {
@@ -828,6 +916,8 @@ h3.my-profession
     .aside
     {
         left: -290px; 
+        -webkit-transition: all 0.5s; 
+        -o-transition: all 0.5s; 
         transition: all 0.5s;
         background: black;
     }
@@ -903,13 +993,17 @@ h3.my-profession
     .portfolio .portfolio-item,
     .services .services-item
     {
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
         max-width: 50%;
     }
     .about .about-content .education,
     .home .home-info
     {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         max-width: 100%;
     }
 
@@ -929,7 +1023,9 @@ h3.my-profession
     .about .about-content .skills,
     .about .about-content .personal-info
     {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         max-width: 100%;
     }
     
