@@ -42,6 +42,15 @@ ul
     opacity: 1;
 
 }
+.nav-banner
+{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 6;
+    background: black;
+}
 .hidden
 {
     display: none !important;
@@ -130,20 +139,86 @@ ul
     box-shadow: 0 0 20px rgba(48, 46,77, 0.15);
 }
 /*aside*/
+#check
+{
+    display: none;
+}
+.main-container
+{
+    position: relative;
+}
+.checkbox
+{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 30;
+    display: none;
+}
+.logo2
+{
+    position: fixed;
+    top: 10px;
+    left: 80px;
+    font-size: 30px;
+    text-transform: capitalize;
+    z-index: 30;
+    display: none;
+}
+.logo2 a
+{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+
+}
+.logo2 a span
+{
+    font-family: "Clicker Script", cursive;
+    font-size: 40px;
+
+}
+.logo2 a::before
+{
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+
+}
+.logo2 a::after
+{
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+    
+}
 .aside
 {
-    width: 270px;
+    width: 290px;
     background:rgb(255, 255, 255);
     position: fixed;
     left: 0;
     top: 0;
     padding: 50px;
-    height: 100%;
     border-right: 2px solid var(--bg-black-900);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
+     
 }
 .aside .logo
 {
@@ -207,6 +282,7 @@ ul
     display: none;
     align-items: center;
     justify-content: center;
+
 }
 .aside .nav-toggler span
 {
@@ -230,7 +306,7 @@ ul
 .aside .nav 
 {
     margin-top: 50px;
-    padding-top: 100%;
+    padding-top: 10%;
 }
 .aside .nav li
 {
@@ -751,21 +827,78 @@ h3.my-profession
 {
     .aside
     {
-        left: -270px;
+        left: -290px;
+        transition: all 0.5s;
+        background: black;
+    }
+    ul li a i
+    {
+        color: white;
+    }
+    ul li a
+    {
+        color: white;
+    }
+    .nav-banner
+    {
+        display: block;
+
+    }
+    .logo
+    {
+        display: none;
+    }
+    .logo2
+    {
+        display: block;
+    }
+    .checkbox
+    {
+        display: block;
+    }
+    #check:checked ~ .aside
+    {
+        left: 0;
+    }
+    .main-content
+    {
+        padding-top: 80px;
     }
     .main-content
     {
         padding-left: 0;
+    }
+    .aside .nav 
+    {
+    padding-top: 0%;
     }
     .about .about-content .personal-info .info-item p span
     {
         display: block;
         margin-left: 0;
     }
+    
 }
 @media (max-width:991px)
 {
-    
+    .aside
+    {
+        left: -290px;
+        background-color: black;
+    }
+    ul li a i
+    {
+        color: white;
+    }
+    ul li a
+    {
+        color: white;
+    }
+    .nav-banner
+    {
+        display: block;
+
+    }
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .services .services-item
@@ -799,4 +932,5 @@ h3.my-profession
         flex: 0 0 100%;
         max-width: 100%;
     }
+    
 }
