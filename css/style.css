@@ -886,13 +886,13 @@ h3.my-profession
         left: -290px;
         background-color: black;
     }
-    ul li a i
+      ul li a i
     {
-        color: white;
+        color: white !important;
     }
     ul li a
     {
-        color: white;
+        color: white !important;
     }
     .nav-banner
     {
