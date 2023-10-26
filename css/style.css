@@ -220,6 +220,7 @@ ul
 .aside
 {
     width: 290px; 
+    height:100vh !important;
     background:rgb(255, 255, 255);
     position: fixed;
     left: 0;
