@@ -16,6 +16,8 @@ body
     font-size: 16px;
     font-family: 'poppins' sans-serif;
     webkit-user-select:none !important;
+    -moz-user-select: none !important;
+    
 
 }
 *{
